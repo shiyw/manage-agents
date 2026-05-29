@@ -1,0 +1,4 @@
+interface:
+  display_name: "刘小排赛道尸检"
+  short_description: "反向研究赛道死亡案例，按死法分类并判断你最大概率死在哪。"
+  default_prompt: "使用 $lxp-market-autopsy 分析这个赛道过去 5 年死掉的产品。"

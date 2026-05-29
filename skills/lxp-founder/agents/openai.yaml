@@ -1,0 +1,4 @@
+interface:
+  display_name: "刘小排投资人拷问"
+  short_description: "用刘小排式带偏见投资人视角拆融资项目、伪优势和硬伤。"
+  default_prompt: "使用 $lxp-founder 听我介绍项目并给出不投理由。"

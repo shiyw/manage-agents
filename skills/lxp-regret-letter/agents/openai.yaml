@@ -1,0 +1,4 @@
+interface:
+  display_name: "刘小排五年后悔信"
+  short_description: "代入五年后彻底后悔的自己，写出具体损失、自欺和冷酷结尾。"
+  default_prompt: "使用 $lxp-regret-letter 为这个决定写一封五年后的后悔信。"

@@ -1,0 +1,4 @@
+interface:
+  display_name: "刘小排方案冷审"
+  short_description: "用刘小排式无情架构师视角审技术方案、假设和工程风险。"
+  default_prompt: "使用 $lxp-review-spec review 这份技术方案。"

@@ -1,0 +1,4 @@
+interface:
+  display_name: "刘小排需求追问"
+  short_description: "用刘小排式逐问挖隐含假设、边界、偷懒和自欺点，直到需求清楚。"
+  default_prompt: "使用 $lxp-ask 帮我逐步澄清这个需求。"
