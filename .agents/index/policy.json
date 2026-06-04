@@ -1,0 +1,112 @@
+{
+  "version": "0.4",
+  "default_mode": "low_risk_auto_high_risk_confirm",
+  "index_home": "/Users/yi/ws/manage-agents/.agents/index",
+  "log_home": "/Users/yi/ws/manage-agents/.agents/logs",
+  "trash_home": "/Users/yi/ws/manage-agents/.agents/trash",
+  "forbidden": [
+    {
+      "pattern": ".env",
+      "scope": "anywhere"
+    },
+    {
+      "pattern": ".env.*.local",
+      "scope": "anywhere"
+    },
+    {
+      "path": "/Volumes/Passport/private",
+      "scope": "subtree"
+    }
+  ],
+  "roots": [
+    {
+      "path": "/Users/yi/obs",
+      "role": "active_maintenance",
+      "allows_full_index": true,
+      "interactive_high_risk_requires_confirmation": true,
+      "notes": "Canonical Obsidian vault, including 00_Records, 00_Inbox, Clippings, 01_Projects, 02_Areas, 03_Resources, 04_Archive, 05_Attachments, and 06_Metadata."
+    },
+    {
+      "path": "/Volumes/Passport/09_resource/00_知识库",
+      "role": "active_maintenance",
+      "allows_full_index": true,
+      "interactive_high_risk_requires_confirmation": true,
+      "notes": "Local knowledge base. Images, articles, PDFs, audio, and video should enter Obsidian. Source files may be organized after interactive confirmation."
+    },
+    {
+      "path": "/Users/yi/ws",
+      "role": "active_index",
+      "allows_full_index": true,
+      "interactive_high_risk_requires_confirmation": true,
+      "notes": "Project workspaces. Code projects follow their own git status and development rules."
+    },
+    {
+      "path": "~/Documents",
+      "role": "active_index",
+      "allows_full_index": true,
+      "interactive_high_risk_requires_confirmation": true,
+      "notes": "Document source and archive-candidate area."
+    },
+    {
+      "path": "/Volumes/Passport/downloads",
+      "role": "downloads",
+      "allows_full_index": true,
+      "interactive_high_risk_requires_confirmation": true,
+      "notes": "Equivalent to system Downloads."
+    },
+    {
+      "path": "/Volumes/DownloadedResource/agent-reach",
+      "role": "downloads",
+      "allows_full_index": true,
+      "interactive_high_risk_requires_confirmation": true,
+      "notes": "Agent-reach downloads; scan and propose organization, but confirm before changing."
+    },
+    {
+      "path": "/Volumes/Passport/01-09",
+      "role": "long_term_archive",
+      "allows_full_index": true,
+      "can_add_content": true,
+      "interactive_high_risk_requires_confirmation": true,
+      "notes": "Long-term archive. Codex may add content but should not reorganize existing structure without confirmation."
+    },
+    {
+      "path": "/Volumes/Passport/backup",
+      "role": "backup_management",
+      "allows_full_index": true,
+      "can_add_content": true,
+      "can_restructure": true,
+      "can_compress": true,
+      "delete_always_requires_confirmation": true,
+      "notes": "Backup area. Deletion must be confirmed even when moving to trash."
+    },
+    {
+      "path": "/Volumes/DownloadedResource",
+      "role": "index_only",
+      "allows_full_index": true,
+      "excluded_subtrees": [
+        "/Volumes/DownloadedResource/agent-reach"
+      ],
+      "notes": "Index and search only. Do not actively reorganize."
+    },
+    {
+      "path": "/Volumes/Passport/applications",
+      "role": "index_only",
+      "allows_full_index": true,
+      "notes": "External applications and Mac mini storage relief area. Do not actively reorganize."
+    }
+  ],
+  "naming": {
+    "dated_files": "YYYY-MM-DD 文件名",
+    "default_principles": [
+      "readable",
+      "stable",
+      "semantic",
+      "avoid_duplicates",
+      "avoid_over_nesting"
+    ]
+  },
+  "git": {
+    "automation_tasks_auto_commit": true,
+    "interactive_tasks_ask_before_commit": true
+  }
+}

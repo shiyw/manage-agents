@@ -19,6 +19,19 @@ npm-debug.log*
 yarn-debug.log*
 pnpm-debug.log*
 
+# Agent runtime state
+!.agents/
+!.agents/index/
+.agents/index/*
+!.agents/index/README.md
+!.agents/index/policy.json
+!.agents/logs/
+.agents/logs/*
+!.agents/logs/README.md
+!.agents/trash/
+.agents/trash/*
+!.agents/trash/README.md
+
 # Python
 __pycache__/
 *.py[cod]
