@@ -1,0 +1,4 @@
+interface:
+  display_name: "Paperclip 公司包"
+  short_description: "设计、导入并验证 Paperclip 公司包。"
+  default_prompt: "使用 $paperclip-company-packages 设计并验证一个 Paperclip 公司包。"
