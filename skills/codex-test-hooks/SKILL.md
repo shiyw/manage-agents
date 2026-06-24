@@ -9,9 +9,9 @@ description: 当项目需要配置 Codex Hooks 在代码编辑后或 Stop 前自
 
 在目标项目根目录配置 Codex hooks，让 Codex 在代码编辑后和 `Stop` 阶段运行 `./runtest.sh`。不要改业务代码，不要改测试文件。
 
-创建下面这些文件。如果 `.codex/hooks.json` 已存在，只合并需要的 hook group，保留原有无关配置。
+创建下面这些文件。如果 `.agents/hooks.json` 已存在，只合并需要的 hook group，保留原有无关配置。
 
-## `.codex/hooks/run-tests.sh`
+## `.agents/hooks/run-tests.sh`
 
 ```sh
 #!/usr/bin/env bash
@@ -43,10 +43,10 @@ rm -f "$out"; exit 2
 然后运行：
 
 ```bash
-chmod +x .codex/hooks/run-tests.sh
+chmod +x .agents/hooks/run-tests.sh
 ```
 
-## `.codex/hooks.json`
+## `.agents/hooks.json`
 
 ```json
 {
@@ -54,12 +54,12 @@ chmod +x .codex/hooks/run-tests.sh
     "PostToolUse": [
       {
         "matcher": "apply_patch|Edit|Write",
-        "hooks": [{ "type": "command", "command": "bash .codex/hooks/run-tests.sh" }]
+        "hooks": [{ "type": "command", "command": "bash .agents/hooks/run-tests.sh" }]
       }
     ],
     "Stop": [
       {
-        "hooks": [{ "type": "command", "command": "bash .codex/hooks/run-tests.sh" }]
+        "hooks": [{ "type": "command", "command": "bash .agents/hooks/run-tests.sh" }]
       }
     ]
   }
@@ -98,6 +98,6 @@ exit 2
 ## 验证
 
 ```bash
-cat .codex/hooks.json | python3 -m json.tool
-ls -la .codex/hooks/run-tests.sh
+cat .agents/hooks.json | python3 -m json.tool
+ls -la .agents/hooks/run-tests.sh
 ```
