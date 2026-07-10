@@ -14,8 +14,9 @@ Use this skill to turn a source PDF folder under the local knowledge base into O
 Before starting, read the current workspace/user rules plus:
 
 - `/Users/yi/.codex/references/resources_and_notes.md`
-- `/Users/yi/.codex/references/download_and_transcribe_contents.md`
-- `/Users/yi/.codex/references/coding.md`
+- `/Users/yi/.codex/references/download_contents.md`
+- `/Users/yi/.codex/references/transcribe_media.md`
+- `/Users/yi/.codex/references/filesystem_control.md`
 - `/Users/yi/obs/06_Metadata/Templates/阅读笔记模板.md`
 
 Do not write `00_Inbox`. Do not move, delete, rename, or rewrite source PDFs. Do not clean unrelated Obsidian git state.
