@@ -16,6 +16,8 @@
 
 ## 开发 skills
 
-Skill应该放在 skills 文件夹的子文件夹下。
+Skill 应该放在 `skills/` 文件夹的子文件夹下。
 
-Skill开发需要遵从 skill 的最佳实践。
+本仓库的 `.agents/skills` 与 `.claude/skills` 直接 symlink 到 `skills/`（相对路径 `../skills`），供本地开发调试；不要改成指向 `~/.skills-manager`，也不要用 Skills Manager sync 覆盖这两个目录。
+
+Skill 开发需要遵从 skill 的最佳实践。

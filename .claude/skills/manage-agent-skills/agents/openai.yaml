@@ -1,4 +1,0 @@
-interface:
-  display_name: "Manage Agent Skills"
-  short_description: "Use Skills Manager for agent skills"
-  default_prompt: "Use $manage-agent-skills to manage skills across agents and workspaces with Skills Manager."

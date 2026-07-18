@@ -1,4 +1,0 @@
-interface:
-  display_name: "PDF 同步到 Obsidian"
-  short_description: "本地知识库 PDF 同步到 03_Resources"
-  default_prompt: "Use $sync-pdf-resources-to-obsidian to sync a local knowledge-base PDF folder into Obsidian 03_Resources."
