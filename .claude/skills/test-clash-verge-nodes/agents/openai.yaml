@@ -1,0 +1,4 @@
+interface:
+  display_name: "测试 Clash Verge 节点"
+  short_description: "测 Clash Verge 节点速度、解锁和出口。"
+  default_prompt: "使用 $test-clash-verge-nodes 测试当前 Clash Verge 节点的速度、解锁和出口并输出报告。"

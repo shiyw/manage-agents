@@ -1,0 +1,4 @@
+interface:
+  display_name: "Codex 测试 Hooks"
+  short_description: "添加自动运行项目测试的 Codex hooks。"
+  default_prompt: "使用 $codex-test-hooks 给当前项目添加 Codex 测试 hooks。"
